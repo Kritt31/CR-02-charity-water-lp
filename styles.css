@@ -1,2 +1,318 @@
 /* Add your styles for the page here */
 
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff7e1; /* Light background color for readability */
+    color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Allows positioning of text over the image */
+    text-align: center;
+    color: #fff7e1; /* Light text for contrast */
+}
+
+.hero-image {
+    width: 100%; /* Full-width image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero-text {
+    position: absolute; /* Position text over the image */
+    top: 10%; /* Align to the upper part of the page */
+    left: 10%; /* Align to the left with some padding */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for modern look */
+    text-align: left; /* Align text to the left */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Larger font for headline */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #ffc907; /* Bright yellow for buttons */
+    color: #003366; /* Dark text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Logo */
+.hero-logo {
+    position: absolute; /* Position the logo over the hero image */
+    top: 10px; /* Add some space from the top */
+    left: 10px; /* Add some space from the left */
+    width: 150px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure the logo appears above other elements */
+}
+
+/* Story Section */
+.story {
+    padding: 20px;
+    background-color: #77a8bb; /* Soft blue for a calm feel */
+    text-align: center;
+    color: #fff7e1; /* Light text for contrast */
+}
+
+.story h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.story p {
+    font-size: 1em;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+    background-color: #bf6c46; /* Warm brown for urgency */
+    color: #fff7e1; /* Light text for contrast */
+    text-align: center;
+    padding: 20px;
+}
+
+.call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.call-to-action p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.call-to-action .btn {
+    background-color: #003366; /* Dark blue for buttons */
+    color: #fff7e1; /* Light text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #003366; /* Dark blue background for contrast */
+    color: #fff7e1; /* Light text for readability */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.contact h2 {
+    font-size: 2em; /* Larger font for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.contact p {
+    font-size: 1em; /* Standard font size for text */
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.contact a {
+    color: #ffc907; /* Bright yellow for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Social Media Spotlight */
+.social-media {
+    background-color: #003366; /* Dark blue background for consistency */
+    color: #fff7e1; /* Light text for readability */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.social-media h2 {
+    font-size: 2em; /* Larger font for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.social-media p {
+    font-size: 1em; /* Standard font size for text */
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.social-link {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Add spacing between links */
+    color: #ffc907; /* Bright yellow for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Slightly larger font for visibility */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Footer Section */
+.footer {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Space out the sections */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #003366; /* Dark blue background for consistency */
+    color: #fff7e1; /* Light text for readability */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.contact, .social-media {
+    width: 45%; /* Each section takes up 45% of the width */
+}
+
+.contact h2, .social-media h2 {
+    font-size: 1.8em; /* Slightly smaller font for headings */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.contact p, .social-media p {
+    font-size: 1em; /* Standard font size for text */
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.social-link {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Add spacing between links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icon {
+    width: 40px; /* Set a fixed width for the icons */
+    height: 40px; /* Set a fixed height for the icons */
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+    /* Adjust body text for better readability on smaller screens */
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    /* Hero Section */
+    .hero-text {
+        top: 20%; /* Move text slightly lower for better visibility */
+        left: 5%; /* Reduce left padding for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+        font-size: 0.9em; /* Adjust font size for mobile */
+    }
+
+    .hero-text h1 {
+        font-size: 1.8em; /* Smaller headline font size */
+    }
+
+    .hero-text p {
+        font-size: 1em; /* Adjust subheadline font size */
+    }
+
+    .hero-text .btn {
+        padding: 8px 15px; /* Smaller button size */
+        font-size: 0.9em; /* Adjust button text size */
+    }
+
+    /* Story Section */
+    .story {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .story h2 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    .story p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+
+    /* Call-to-Action Section */
+    .call-to-action {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    .call-to-action p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+
+    .call-to-action .btn {
+        padding: 8px 15px; /* Smaller button size */
+        font-size: 0.9em; /* Adjust button text size */
+    }
+}
+
+/* For screens larger than 768px (desktop devices) */
+@media (min-width: 769px) {
+    /* Ensure larger screens maintain the original design */
+    body {
+        font-size: 16px; /* Default font size for desktop */
+    }
+
+    .hero-text {
+        top: 10%; /* Original positioning */
+        left: 10%; /* Original positioning */
+        padding: 20px; /* Original padding */
+        font-size: 1em; /* Default font size */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em; /* Default headline size */
+    }
+
+    .hero-text p {
+        font-size: 1.2em; /* Default subheadline size */
+    }
+
+    .hero-text .btn {
+        padding: 10px 20px; /* Default button size */
+        font-size: 1em; /* Default button text size */
+    }
+
+    .story, .call-to-action {
+        padding: 20px; /* Default padding */
+    }
+
+    .story h2, .call-to-action h2 {
+        font-size: 2em; /* Default heading size */
+    }
+
+    .story p, .call-to-action p {
+        font-size: 1em; /* Default paragraph size */
+    }
+
+    .call-to-action .btn {
+        padding: 10px 20px; /* Default button size */
+        font-size: 1em; /* Default button text size */
+    }
+}
+
